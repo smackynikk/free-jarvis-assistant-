@@ -1,0 +1,156 @@
+from flask import Flask, render_template_string
+
+app = Flask(__name__)
+
+HTML = """
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>D</title>
+    <style>
+        body {
+            background: #08060b;
+            color: #f5d9ef;
+            font-family: sans-serif;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        button {
+            width: 90%;
+            max-width: 400px;
+            padding: 18px;
+            margin: 10px;
+            border-radius: 18px;
+            border: 1px solid #c56aa8;
+            background: #17101b;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>D</h1>
+    <p>Your assistant is online.</p>
+
+    <button>🎙️ Talk to D</button>
+    <button>💬 Chat with D</button>
+    <button>🧠 AI Tools</button>
+</body>
+</html>
+"""
+
+@app.route("/")
+def home():
+    return render_template_string(HTML)
+
+app.run(host="0.0.0.0", port=8000)
+from flask import Flask, request, render_template_string
+
+app = Flask(__name__)
+
+HTML = """
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D</title>
+<style>
+body {
+    background:#08060b;
+    color:#f5d9ef;
+    font-family:sans-serif;
+    text-align:center;
+    padding:30px 15px;
+}
+h1 { font-size:55px; }
+#chat {
+    width:95%;
+    max-width:500px;
+    height:300px;
+    margin:auto;
+    background:#120d16;
+    border-radius:20px;
+    padding:15px;
+    overflow:auto;
+    text-align:left;
+}
+input {
+    width:70%;
+    padding:15px;
+    margin-top:15px;
+    border-radius:15px;
+    border:1px solid #c56aa8;
+    background:#17101b;
+    color:white;
+}
+button {
+    padding:15px 20px;
+    border-radius:15px;
+    border:1px solid #c56aa8;
+    background:#17101b;
+    color:white;
+    font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>D</h1>
+<p>Your assistant is online.</p>
+
+<div id="chat">
+    <b>D:</b> Hey. I'm online.
+</div>
+
+<input id="msg" placeholder="Talk to D...">
+<button onclick="sendMessage()">Send</button>
+
+<script>
+async function sendMessage() {
+    let input = document.getElementById("msg");
+    let chat = document.getElementById("chat");
+    let message = input.value;
+
+    if (!message) return;
+
+    chat.innerHTML += "<br><br><b>You:</b> " + message;
+    input.value = "";
+
+    let response = await fetch("/chat", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({message: message})
+    });
+
+    let data = await response.json();
+
+    chat.innerHTML += "<br><br><b>D:</b> " + data.reply;
+    chat.scrollTop = chat.scrollHeight;
+}
+</script>
+
+</body>
+</html>
+"""
+
+@app.route("/")
+def home():
+    return render_template_string(HTML)
+
+@app.route("/chat", methods=["POST"])
+def chat():
+    data = request.get_json()
+    message = data.get("message", "")
+
+    # Temporary test response
+    reply = f"I received: {message}"
+
+    return {"reply": reply}
+
+app.run(host="0.0.0.0", port=8000)

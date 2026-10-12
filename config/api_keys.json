@@ -1,0 +1,14 @@
+{
+    "gemini_api_key": "AQ.Ab8RN6LYJqTukg90jDbDR1pCoC3b1Vuxt5a7SrPtYIHz3q9k2w",
+    "os_system": "linux",
+    "push_to_talk_enabled": true,
+    "morning_brief_enabled": false,
+    "input_device": "",
+    "output_device": "",
+    "wake_word_enabled": false,
+    "hud_style": "core",
+    "voice_name": "Aoede",
+    "assistant_name": "D",
+    "user_name": "NIK",
+    "ui_color": "#ff00b4"
+}

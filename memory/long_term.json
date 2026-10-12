@@ -1,0 +1,138 @@
+{
+  "identity": {
+    "language": {
+      "value": "English",
+      "updated": "2026-09-24"
+    },
+    "wake_word": {
+      "value": "wakey wakey d",
+      "updated": "2026-09-24"
+    },
+    "persona_summary": {
+      "value": "jack of all trades blending genres experimental hip-hop producer",
+      "updated": "2026-10-04"
+    },
+    "birthday": {
+      "value": "October 3rd",
+      "updated": "2026-09-26"
+    },
+    "custom_birthday": {
+      "value": "September 23rd, 2026",
+      "updated": "2026-09-24"
+    },
+    "soft_skills": {
+      "value": "confidence",
+      "updated": "2026-10-04"
+    }
+  },
+  "preferences": {
+    "cancellation_phrase": {
+      "value": "kill kill",
+      "updated": "2026-09-24"
+    },
+    "nickname_preference": {
+      "value": "sometimes boss and babe",
+      "updated": "2026-09-24"
+    },
+    "timezone_preference": {
+      "value": "Asia/Kolkata",
+      "updated": "2026-09-24"
+    },
+    "prefers_cheerful_birthday_wish": {
+      "value": "true",
+      "updated": "2026-10-03"
+    },
+    "hobbies": {
+      "value": "music, game dev, coding, tech, AI, content creation, image/video editing, design",
+      "updated": "2026-10-04"
+    }
+  },
+  "projects": {},
+  "relationships": {},
+  "wishes": {},
+  "notes": {
+    "convo_context_sleep_timer": {
+      "value": "User asked to adjust the assistant sleep/idle timer, experiencing issue where it sleeps if inactive for 2 minutes. Currently troubleshooting system setting adjustments.",
+      "updated": "2026-09-24"
+    },
+    "troubleshooting_sleep_timer": {
+      "value": "Attempted system commands to change sleep timer, but user reports D still sleeps after 2 minutes. Need to research easier/alternative methods. saving convo per user request.",
+      "updated": "2026-09-24"
+    },
+    "system_preference_save_details": {
+      "value": "User explicitly requested to save every detail in memory and capture every chat context.",
+      "updated": "2026-09-24"
+    },
+    "stop_command_context": {
+      "value": "Stop current action when hearing 'kill kill' or similar",
+      "updated": "2026-09-24"
+    },
+    "sleep_timer_status": {
+      "value": "fixed by user",
+      "updated": "2026-09-24"
+    },
+    "sleep_timer_problem": {
+      "value": "was sleeping inactive after 2 minutes",
+      "updated": "2026-09-24"
+    },
+    "game_status_2026_09_24": {
+      "value": "user said I lost a guessing game I forgot",
+      "updated": "2026-09-24"
+    },
+    "sleep_schedule_status": {
+      "value": "messed up",
+      "updated": "2026-09-24"
+    },
+    "laptop_specs": {
+      "value": "CPU: Intel Celeron N4500, RAM: 8GB, Storage: 256GB",
+      "updated": "2026-09-26"
+    },
+    "birthday_wish_trigger": {
+      "value": "wish on first app launch of user's birthday October 3rd",
+      "updated": "2026-09-29"
+    },
+    "birthday_sentiment": {
+      "value": "dislikes it",
+      "updated": "2026-10-01"
+    },
+    "birthday_wish_context": {
+      "value": "User wants a big, lovely, unique paragraph wish next time they say hello on their birthday.",
+      "updated": "2026-10-03"
+    },
+    "do_not_mess_up_birthday": {
+      "value": "User emphasized NOT messing up the special birthday wish delivery.",
+      "updated": "2026-10-03"
+    }
+  },
+  "sessions": [
+    {
+      "date": "2026-10-02",
+      "summary": "The user discussed uploading and using stems from a zip file in BandLab. They were informed that the individual audio files could be imported into the Mix Editor after being extracted.",
+      "language": "English"
+    },
+    {
+      "date": "2026-10-04",
+      "summary": "The user discussed their existing skillset, confidence, and diverse interests, receiving confirmation that these provide a strong base for freelance work. The conversation centered on applying current abilities—like image or basic video editing for content creators—rather than ac",
+      "language": "English"
+    },
+    {
+      "date": "2026-10-04",
+      "summary": "The user discussed various direct income-generating strategies, primarily focusing on freelancing professional skills versus other options like content creation or crowdsourcing. The conversation emphasized leveraging current skills and hardware for quick turnaround services like",
+      "language": "English"
+    }
+  ],
+  "monitors": {
+    "freelance_music_and_design_business_tren": {
+      "topic": "freelance music and design business trends 2026",
+      "added": "2026-10-04",
+      "last_check": "2026-10-04",
+      "last_hash": "428d0ab04b90"
+    },
+    "ai_integration_in_creative_services_scal": {
+      "topic": "AI integration in creative services scaling solo",
+      "added": "2026-10-04",
+      "last_check": "2026-10-04",
+      "last_hash": "da897c5143db"
+    }
+  }
+}
